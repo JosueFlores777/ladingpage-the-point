@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+.margenGlobal {
+    margin: 50px;
+}
+
+.full-height-card {
+    height: 100vh;
+}
+
+.card-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn{
+    --bs-btn-padding-x: 0rem !important;
+}
+
+.card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 767.98px) {
+    .card-body {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .margenGlobal {
+        margin: 2px !important;
+    }
+    
+}
