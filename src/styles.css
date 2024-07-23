@@ -68,12 +68,12 @@ a {
 
 /*section 2*/
 
-.textsecicion2title{
+.textsecicion2title {
     font-weight: 700;
     font-size: 20px;
 }
 
-.textsecicion2subtile{
+.textsecicion2subtile {
     margin-top: -15px;
     font-weight: 700;
     font-size: 42px;
@@ -109,7 +109,12 @@ a {
 
 /**/
 
+/**/
 
+.acciontitle {
+    font-weight: 700;
+    font-size: 42px;
+}
 
 
 
@@ -143,6 +148,18 @@ a {
     justify-content: flex-end;
 }
 
+.seccion-5 {
+    margin-top: 140px;
+    margin-bottom: 45px;
+}
+
+.btn-square {
+    border-radius: 0 !important;
+    padding: 0 16px 0 16px;
+    width: 172px;
+    height: 48px;
+}
+
 @media (max-width: 767.98px) {
     .card-body {
         flex-direction: column;
@@ -155,6 +172,11 @@ a {
 
     .container_pricnital {
         width: auto;
+    }
+
+    .seccion-5 {
+        margin-top: 70px;
+        margin-bottom: 35px;
     }
 }
 
@@ -206,16 +228,101 @@ a {
         padding: 15px;
     }
 
-/*seciotn 2 */
+    /*seciotn 2 */
 
 
-.textsecicion2title{
-    font-size: 15px;
+    .textsecicion2title {
+        font-size: 15px;
+    }
+
+    .textsecicion2subtile {
+        font-weight: 700;
+        font-size: 30px;
+    }
+
 }
 
-.textsecicion2subtile{
-    font-weight: 700;
-    font-size: 30px;
+
+/**/
+
+.hidden1 {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
 }
 
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden1 {
+        transition: none;
+    }
+}
+
+
+#containerScrollInfiteHome {
+    display: grid;
+    /*min-block-size: 100vh;*/
+    font-family: system-ui;
+    font-size: 1.125rem;
+}
+
+
+#containerScrollInfiteHome {
+    margin-top: 50px;
+}
+
+.scrollerHome {
+    overflow: hidden;
+    max-width: auto;
+}
+
+.scrollerHome__inner {
+    height: 235px;
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: max-content;
+}
+
+.scrollerHome[data-animated="true"] {
+    -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scrollerHome[data-animated="true"] .scrollerHome__inner {
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
+}
+
+.scrollerHome[data-direction="right"] {
+    --_animation-direction: reverse;
+}
+
+.scrollerHome[data-direction="left"] {
+    --_animation-direction: forwards;
+}
+
+.scrollerHome[data-speed="fast"] {
+    --_animation-duration: 10s;
+}
+
+.scrollerHome[data-speed="slow"] {
+    --_animation-duration: 60s;
+}
+
+.titleCarruWorkHome {
+    font-family: var(--Urbanist);
+}
+
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - 0.5rem));
+    }
 }
