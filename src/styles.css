@@ -1,3 +1,4 @@
+/* You can add global styles to this file, and also import other style files */
 .margenGlobal {
     margin: 50px;
 }
@@ -234,11 +235,11 @@ a {
     }
 
     .carousel-control-next {
-        right: -48px;
+        right: -39px;
     }
 
     .carousel-control-prev {
-        left: -45px;
+        left: -40px;
     }
 
     .lead {
