@@ -110,6 +110,10 @@ a {
 
 /**/
 
+.containerScrollInfiteHome{
+    background: #000000ab;
+}
+
 /**/
 
 .acciontitle {
@@ -228,6 +232,10 @@ a {
         margin: 0 auto;
     }
 
+    .iconSecction3{
+        margin-left: 6px;
+    }
+
     .carousel-item {
         text-align: center;
         background: #d4d0d0;
@@ -243,7 +251,7 @@ a {
     }
 
     .lead {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .margenGlobal {
@@ -262,6 +270,10 @@ a {
 
     .navbar {
         padding: 15px;
+    }
+
+    .acciontitle {
+        font-size: 35px;
     }
 
     /*seciotn 2 */
