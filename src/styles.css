@@ -91,13 +91,13 @@ a {
 
 .carousel-item {
     text-align: center;
-    background: #d4d0d0;
+    background: #fff;
     height: 400px !important;
 }
 
 .fondoTestimonio {
     padding: 35px;
-    background: #F2F4F8;
+    background: #DEE9FB;
 }
 
 .carousel-control-next {
@@ -238,7 +238,6 @@ a {
 
     .carousel-item {
         text-align: center;
-        background: #d4d0d0;
         height: 450px !important;
     }
 
@@ -306,15 +305,30 @@ a {
     transform: translateX(0);
 }
 
+
+
+.logocarruel img {
+    height: 100px; 
+    margin: auto;
+    margin-right: 10px; 
+    object-fit: contain;
+}
+
+
+
 @media(prefers-reduced-motion) {
     .hidden1 {
         transition: none;
     }
 }
 
+.scrollerHome{
+    background: #DEE9FB !important;
+}
 
 #containerScrollInfiteHome {
     display: grid;
+   
     /*min-block-size: 100vh;*/
     font-family: system-ui;
     font-size: 1.125rem;
