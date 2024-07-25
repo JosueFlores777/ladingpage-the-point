@@ -1,4 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+
 .margenGlobal {
     margin: 50px;
 }
@@ -25,9 +25,34 @@ a {
     width: 900px;
 }
 
+.btn-primary{
+    background:#273B80 !important;
+    border-color: #273B80;
+}
 
+.btn-outline-secondary{
+    background-color: #DEE9FB;
+    color: #273B80;
+    border-color: #273B80;
+}
 
+.btn-outline-secondary:hover{
+    background-color: #273B80;
+    color: #DEE9FB;
+    border-color: #273B80;
+}
 
+.btn-outline-primary{
+    background-color: #DEE9FB;
+    color: #273B80;
+    border-color: #273B80;
+}
+
+.btn-outline-primary:hover{
+    background-color: #273B80;
+    color: #DEE9FB;
+    border-color: #273B80;
+}
 /*Imagen principal*/
 
 .principalImage {
@@ -80,6 +105,25 @@ a {
     font-size: 42px;
 }
 
+.btn-link {
+    font-weight: 500;
+    color: #2D51C8;
+}
+
+/*serction 3*/
+
+.iconSecction3{
+    color: #2D51C8;
+}
+
+.section3text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25.5px;
+    font-family: ;
+}
+
+
 /**/
 /*testimonio*/
 
@@ -94,6 +138,8 @@ a {
     background: #fff;
     height: 400px !important;
 }
+
+
 
 .fondoTestimonio {
     padding: 35px;
@@ -121,12 +167,15 @@ a {
     font-size: 42px;
 }
 
+.textcontendorSeccion4{
+    padding: 0 90px 0 0;
+}
 
 
 /*footer*/
 .footer {
     height: auto;
-    background: #697077;
+    background: #1C264F;
 }
 
 
@@ -186,6 +235,10 @@ a {
     .margenGlobal{
         margin: 25px;
     }
+
+    .textcontendorSeccion4{
+        padding: 0 60px 0 0;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -218,9 +271,16 @@ a {
         margin-left: 0px;
         margin-top: 15px;
     }
+    .textcontendorSeccion4{
+        padding: 0 30px 0 0;
+    }
 }
 
 @media (max-width: 500px) {
+
+    .textcontendorSeccion4{
+        padding: 0 0 0 0;
+    }
 
     .pricipal {
         margin-top: 100px;
@@ -291,7 +351,6 @@ a {
 
 
 /**/
-
 .hidden1 {
     opacity: 0;
     filter: blur(5px);
@@ -305,8 +364,6 @@ a {
     transform: translateX(0);
 }
 
-
-
 .logocarruel img {
     height: 100px; 
     margin: auto;
@@ -314,53 +371,37 @@ a {
     object-fit: contain;
 }
 
-
-
 @media(prefers-reduced-motion) {
     .hidden1 {
         transition: none;
     }
 }
 
-.scrollerHome{
+.scrollerHome {
     background: #DEE9FB !important;
 }
 
 #containerScrollInfiteHome {
     display: grid;
-   
-    /*min-block-size: 100vh;*/
+    margin-top: 50px;
     font-family: system-ui;
     font-size: 1.125rem;
 }
 
-
-#containerScrollInfiteHome {
-    margin-top: 50px;
-}
-
 .scrollerHome {
     overflow: hidden;
-    max-width: auto;
+    max-width: 100%;
 }
 
 .scrollerHome__inner {
     height: 235px;
     padding-block: 1rem;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 1rem;
     width: max-content;
-}
-
-.scrollerHome[data-animated="true"] {
-    -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-}
-
-.scrollerHome[data-animated="true"] .scrollerHome__inner {
-    flex-wrap: nowrap;
     animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
+    will-change: transform;
 }
 
 .scrollerHome[data-direction="right"] {
@@ -371,12 +412,12 @@ a {
     --_animation-direction: forwards;
 }
 
-.scrollerHome[data-speed="fast"] {
+.scrollerHome[data-speed="fast2"] {
     --_animation-duration: 10s;
 }
 
-.scrollerHome[data-speed="slow"] {
-    --_animation-duration: 60s;
+.scrollerHome[data-speed="slow2"] {
+    --_animation-duration: 50s !important;
 }
 
 .titleCarruWorkHome {
@@ -385,6 +426,6 @@ a {
 
 @keyframes scroll {
     to {
-        transform: translate(calc(-50% - 0.5rem));
+        transform: translateX(-50%);
     }
 }

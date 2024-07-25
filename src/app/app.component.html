@@ -118,14 +118,14 @@
         <div class="col d-flex align-items-center justify-content-start">
           <div class="row row-cols-2 g-3">
             <div class="col-md-6">
-              <div class="">
+              <div class="section3text">
                 <svg xmlns="http://www.w3.org/2000/svg" width="66" height="96" fill="currentColor"
                   class="bi bi-car-front-fill iconSecction3" viewBox="0 0 16 16">
                   <path
                     d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679q.05.242.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.8.8 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2m10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2M6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2zM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17s3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z" />
                 </svg>
                 <div class="card-body">
-                  <p class="">
+                  <p class="section3text">
                     With supporting text below as a natural lead-in to
                     additional content.
                   </p>
@@ -133,7 +133,7 @@
               </div>
             </div>
             <div class="col">
-              <div class="">
+              <div class="section3text">
                 <svg xmlns="http://www.w3.org/2000/svg" width="66" height="96" fill="currentColor"
                   class="bi bi-calendar2 iconSecction3" viewBox="0 0 16 16">
                   <path
@@ -141,7 +141,7 @@
                   <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5z" />
                 </svg>
                 <div class="card-body">
-                  <p class="">
+                  <p class="section3text">
                     With supporting text below as a natural lead-in to
                     additional content.
                   </p>
@@ -196,11 +196,12 @@
       </div>
     </div>
   </div>
+</div>
   <!--Section 3 end-->
 
-  <div id="containerScrollInfiteHome ">
-    <div class="scrollerHome" data-direction="right" data-speed="slow" data-animated="true">
-      <div class="scrollerHome__inner logocarruel" style="animation-play-state: running">
+  <div id="containerScrollInfiteHome">
+    <div class="scrollerHome" data-direction="right" data-speed="slow2" data-animated="true">
+      <div class="scrollerHome__inner logocarruel">
         <img src="./assets/img/logo/300-logo.png" alt="" />
         <img src="./assets/img/logo/Hawaiice_Logo.png" alt="" />
         <img src="./assets/img/logo/KrazyPapas_Logo.png" alt="" />
@@ -210,6 +211,7 @@
         <img src="./assets/img/logo/LOGOS-SUIZA.png" alt="" />
         <img src="./assets/img/logo/Prado.png" alt="" />
         <img src="./assets/img/logo/logo.png" alt="" />
+        <!-- Duplicar estáticamente -->
         <img src="./assets/img/logo/300-logo.png" alt="" />
         <img src="./assets/img/logo/Hawaiice_Logo.png" alt="" />
         <img src="./assets/img/logo/KrazyPapas_Logo.png" alt="" />
@@ -219,82 +221,59 @@
         <img src="./assets/img/logo/LOGOS-SUIZA.png" alt="" />
         <img src="./assets/img/logo/Prado.png" alt="" />
         <img src="./assets/img/logo/logo.png" alt="" />
-    </div>
-    
+      </div>
     </div>
   </div>
+  
 
   <script>
-    /*
-     if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-       addAnimation();
-     }
- 
-     function addAnimation() {
-       scrollers.forEach((scroller) => {
-         scroller.setAttribute("data-animated", true);
-         const scrollerInner = scroller.querySelector(".scrollerHome__inner");
-         const scrollerContent = Array.from(scrollerInner.children);
-         scrollerContent.forEach((item) => {
-           const duplicatedItem = item.cloneNode(true);
-           duplicatedItem.setAttribute("aria-hidden", true);
-           scrollerInner.appendChild(duplicatedItem);
-         });
-       });
-     }
-     const scroller = document.querySelector(".scrollerHome");
-     const scrollerInner = scroller.querySelector(".scrollerHome__inner");
- 
-     scrollerInner.addEventListener("mouseenter", () => {
-       scrollerInner.style.animationPlayState = "paused";
-     });
- 
-     scrollerInner.addEventListener("mouseleave", () => {
-       scrollerInner.style.animationPlayState = "running";
-     });
- 
-     const isMobile = window.innerWidth <= 768;
- 
-     if (isMobile) {
-       let touchStartX = null;
- 
-       scrollerInner.addEventListener("touchstart", (event) => {
-         touchStartX = event.touches[0].clientX;
-         scrollerInner.style.animationPlayState = "paused";
-       });
- 
-       scrollerInner.addEventListener("touchend", () => {
-         scrollerInner.style.animationPlayState = "running";
-         touchStartX = null;
-       });
- 
-       scrollerInner.addEventListener("touchmove", (event) => {
-         if (touchStartX !== null) {
-           const touchEndX = event.changedTouches[0].clientX;
-           const deltaX = touchEndX - touchStartX;
-           scrollerInner.scrollLeft -= deltaX;
-           touchStartX = touchEndX;
-         }
-       });
- 
-       document.addEventListener("touchstart", (event) => {
-         if (!scrollerInner.contains(event.target)) {
-           scrollerInner.style.animationPlayState = "running";
-         }
-       });
-     } else {
-       scrollerInner.addEventListener("mouseenter", () => {
-         scrollerInner.style.animationPlayState = "paused";
-       });
- 
-       scrollerInner.addEventListener("mouseleave", () => {
-         scrollerInner.style.animationPlayState = "running";
-       });
-     }
-    
-    */
-  </script>
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  const scroller = document.querySelector(".scrollerHome");
+  const scrollerInner = scroller.querySelector(".scrollerHome__inner");
 
+  scrollerInner.addEventListener("mouseenter", () => {
+    scrollerInner.style.animationPlayState = "paused";
+  });
+
+  scrollerInner.addEventListener("mouseleave", () => {
+    scrollerInner.style.animationPlayState = "running";
+  });
+
+  const isMobile = window.innerWidth <= 768;
+
+  if (isMobile) {
+    let touchStartX = null;
+
+    scrollerInner.addEventListener("touchstart", (event) => {
+      touchStartX = event.touches[0].clientX;
+      scrollerInner.style.animationPlayState = "paused";
+    });
+
+    scrollerInner.addEventListener("touchend", () => {
+      scrollerInner.style.animationPlayState = "running";
+      touchStartX = null;
+    });
+
+    scrollerInner.addEventListener("touchmove", (event) => {
+      if (touchStartX !== null) {
+        const touchEndX = event.changedTouches[0].clientX;
+        const deltaX = touchEndX - touchStartX;
+        scrollerInner.scrollLeft -= deltaX;
+        touchStartX = touchEndX;
+      }
+    });
+
+    document.addEventListener("touchstart", (event) => {
+      if (!scrollerInner.contains(event.target)) {
+        scrollerInner.style.animationPlayState = "running";
+      }
+    });
+  }
+}
+
+    
+  </script>
+<div class="container-fluid mt-5">
   <!--Section 4 start-->
   <div class="align-items-center justify-content-center margenGlobal">
     <div class="my-5 margenGlobal">
@@ -441,7 +420,7 @@
             <button type="button" class="btn btn-outline-primary me-2 btn-square">
               Secondary Action
             </button>
-            <button type="button" class="btn btn-primary btn-square">
+            <button type="button" class="btn btn-primary  btn-square">
               Primary Action
             </button>
           </div>
