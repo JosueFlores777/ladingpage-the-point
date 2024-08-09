@@ -37,6 +37,16 @@
   </div>
   <!--Section 1 end-->
 
+
+  <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" 
+  (init)="slickInit($event)" (breakpoint)="breakpoint($event)" 
+  (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
+<div ngxSlickItem class="slide" *ngFor="let slide of slides; trackBy: trackByFn">
+<img [src]="slide.img" alt="" width="100%">
+</div>
+</ngx-slick-carousel>
+
+
   <!--Section 2 start-->
   <div class="align-items-center justify-content-center margenGlobal">
     <div class="my-5 margenGlobal">
@@ -197,82 +207,82 @@
     </div>
   </div>
 </div>
-  <!--Section 3 end-->
+<!--Section 3 end-->
 
-  <div id="containerScrollInfiteHome">
-    <div class="scrollerHome" data-direction="right" data-speed="slow2" data-animated="true">
-      <div class="scrollerHome__inner logocarruel">
-        <img src="./assets/img/logo/300-logo.png" alt="" />
-        <img src="./assets/img/logo/Hawaiice_Logo.png" alt="" />
-        <img src="./assets/img/logo/KrazyPapas_Logo.png" alt="" />
-        <img src="./assets/img/logo/LOGO SURF CITY AVANTE.png" alt="" />
-        <img src="./assets/img/logo/logo-CASTELLA-SAGARRA.png" alt="" />
-        <img src="./assets/img/logo/Logo-Romani_2024.png" alt="" />
-        <img src="./assets/img/logo/LOGOS-SUIZA.png" alt="" />
-        <img src="./assets/img/logo/Prado.png" alt="" />
-        <img src="./assets/img/logo/logo.png" alt="" />
-        <!-- Duplicar estáticamente -->
-        <img src="./assets/img/logo/300-logo.png" alt="" />
-        <img src="./assets/img/logo/Hawaiice_Logo.png" alt="" />
-        <img src="./assets/img/logo/KrazyPapas_Logo.png" alt="" />
-        <img src="./assets/img/logo/LOGO SURF CITY AVANTE.png" alt="" />
-        <img src="./assets/img/logo/logo-CASTELLA-SAGARRA.png" alt="" />
-        <img src="./assets/img/logo/Logo-Romani_2024.png" alt="" />
-        <img src="./assets/img/logo/LOGOS-SUIZA.png" alt="" />
-        <img src="./assets/img/logo/Prado.png" alt="" />
-        <img src="./assets/img/logo/logo.png" alt="" />
-      </div>
+<div id="containerScrollInfiteHome">
+  <div class="scrollerHome" data-direction="right" data-speed="slow2" data-animated="true">
+    <div class="scrollerHome__inner logocarruel">
+      <img src="./assets/img/logo/300-logo.png" alt="" />
+      <img src="./assets/img/logo/Hawaiice_Logo.png" alt="" />
+      <img src="./assets/img/logo/KrazyPapas_Logo.png" alt="" />
+      <img src="./assets/img/logo/LOGO SURF CITY AVANTE.png" alt="" />
+      <img src="./assets/img/logo/logo-CASTELLA-SAGARRA.png" alt="" />
+      <img src="./assets/img/logo/Logo-Romani_2024.png" alt="" />
+      <img src="./assets/img/logo/LOGOS-SUIZA.png" alt="" />
+      <img src="./assets/img/logo/Prado.png" alt="" />
+      <img src="./assets/img/logo/logo.png" alt="" />
+      <!-- Duplicar estáticamente -->
+      <img src="./assets/img/logo/300-logo.png" alt="" />
+      <img src="./assets/img/logo/Hawaiice_Logo.png" alt="" />
+      <img src="./assets/img/logo/KrazyPapas_Logo.png" alt="" />
+      <img src="./assets/img/logo/LOGO SURF CITY AVANTE.png" alt="" />
+      <img src="./assets/img/logo/logo-CASTELLA-SAGARRA.png" alt="" />
+      <img src="./assets/img/logo/Logo-Romani_2024.png" alt="" />
+      <img src="./assets/img/logo/LOGOS-SUIZA.png" alt="" />
+      <img src="./assets/img/logo/Prado.png" alt="" />
+      <img src="./assets/img/logo/logo.png" alt="" />
     </div>
   </div>
-  
+</div>
 
-  <script>
-    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-  const scroller = document.querySelector(".scrollerHome");
-  const scrollerInner = scroller.querySelector(".scrollerHome__inner");
 
-  scrollerInner.addEventListener("mouseenter", () => {
-    scrollerInner.style.animationPlayState = "paused";
-  });
+<script>
+  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    const scroller = document.querySelector(".scrollerHome");
+    const scrollerInner = scroller.querySelector(".scrollerHome__inner");
 
-  scrollerInner.addEventListener("mouseleave", () => {
-    scrollerInner.style.animationPlayState = "running";
-  });
-
-  const isMobile = window.innerWidth <= 768;
-
-  if (isMobile) {
-    let touchStartX = null;
-
-    scrollerInner.addEventListener("touchstart", (event) => {
-      touchStartX = event.touches[0].clientX;
+    scrollerInner.addEventListener("mouseenter", () => {
       scrollerInner.style.animationPlayState = "paused";
     });
 
-    scrollerInner.addEventListener("touchend", () => {
+    scrollerInner.addEventListener("mouseleave", () => {
       scrollerInner.style.animationPlayState = "running";
-      touchStartX = null;
     });
 
-    scrollerInner.addEventListener("touchmove", (event) => {
-      if (touchStartX !== null) {
-        const touchEndX = event.changedTouches[0].clientX;
-        const deltaX = touchEndX - touchStartX;
-        scrollerInner.scrollLeft -= deltaX;
-        touchStartX = touchEndX;
-      }
-    });
+    const isMobile = window.innerWidth <= 768;
 
-    document.addEventListener("touchstart", (event) => {
-      if (!scrollerInner.contains(event.target)) {
+    if (isMobile) {
+      let touchStartX = null;
+
+      scrollerInner.addEventListener("touchstart", (event) => {
+        touchStartX = event.touches[0].clientX;
+        scrollerInner.style.animationPlayState = "paused";
+      });
+
+      scrollerInner.addEventListener("touchend", () => {
         scrollerInner.style.animationPlayState = "running";
-      }
-    });
-  }
-}
+        touchStartX = null;
+      });
 
-    
-  </script>
+      scrollerInner.addEventListener("touchmove", (event) => {
+        if (touchStartX !== null) {
+          const touchEndX = event.changedTouches[0].clientX;
+          const deltaX = touchEndX - touchStartX;
+          scrollerInner.scrollLeft -= deltaX;
+          touchStartX = touchEndX;
+        }
+      });
+
+      document.addEventListener("touchstart", (event) => {
+        if (!scrollerInner.contains(event.target)) {
+          scrollerInner.style.animationPlayState = "running";
+        }
+      });
+    }
+  }
+
+
+</script>
 <div class="container-fluid mt-5">
   <!--Section 4 start-->
   <div class="align-items-center justify-content-center margenGlobal">
