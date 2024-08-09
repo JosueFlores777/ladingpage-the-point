@@ -1,42 +1,44 @@
-<header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+<header class="fixed-top">
+
+  <div class="top-bar">
+    <div class="container text-end text-white py-2">
+      <p class="mb-0"><i class="bi bi-geo-alt-fill"></i> Surf City, La Libertad</p>
+    </div>
+  </div>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img
-          src="./assets/img/header/thepoint.png"
-          width="150px"
-          class="logo"
-        />
+        <img src="./assets/img/header/thepoint.png" width="150px" class="logo" />
       </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#experience">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-        <button type="button" class="btn btn-primary btn-square-nav">
-          button text
+        <div class="d-flex flex-grow-1 justify-content-center">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#Comercios">Comercios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Ubicacion">Ubicación</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+        <button type="button" class="btn btn-primary btn-square-nav"
+          onclick="window.open('https://www.google.com/maps/place/The+Point/@13.4879,-89.3474879,17z/data=!4m6!3m5!1s0x8f7cd5001f944a85:0xf2328c3f43fa9930!8m2!3d13.4879!4d-89.3474879!16s%2Fg%2F11w3nbn40n?entry=ttu', '_blank')">
+          Google Maps
         </button>
+        <button type="button" class="btn btn-primary btn-square-nav"
+          onclick="window.open('https://www.waze.com/live-map/directions/sv/la-libertad/san-blas/the-point?navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location&to=place.ChIJhUqUHwDVfI8RMJn6Qz-MMvI', '_blank')">
+          Waze
+        </button>
+
       </div>
     </div>
   </nav>
