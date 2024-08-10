@@ -147,7 +147,7 @@ export class AppComponent {
     autoplay: true,
     autoplaySpeed: 0,
     infinite: true,
-    speed: 4000,
+    speed: 5000,
     cssEase: 'linear',
     arrows: false,
     dots: false,
