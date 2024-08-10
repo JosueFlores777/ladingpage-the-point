@@ -1,6 +1,6 @@
 <app-header></app-header>
 <div class="container-fluid mt-5">
-  <!--Section 1 start-->
+  <!--Section HOME start-->
   <div class="d-flex align-items-center justify-content-center">
     <div class="container">
       <div class="row g-0">
@@ -39,9 +39,9 @@
 
     </div>
   </div>
-  <!--Section 1 end-->
+  <!--Section HOME end-->
 
-  <!--Section 2 start-->
+  <!--Section Comercios start-->
   <div class="align-items-center justify-content-center margenGlobal">
     <div class="my-5 margenGlobal">
       <p class="text-center textsecicion2title text-uppercase">¡Visítanos HOY!</p>
@@ -58,8 +58,8 @@
                 <img [src]="comercio.img" class="card-img-top" alt="{{comercio.nombre}}">
                 <div class="card-body">
                   <h5 class="card-title" style="height: 25px;">{{comercio.nombre}}</h5>
-                  <p class=" text-start" style="height: 79px;">{{comercio.descripcion}}</p>
-                  <a href="#" class="btn-link">More Info <i class="bi bi-arrow-right"></i></a>
+                  <p class=" text-start" style="height: 79px;">{{comercio.descripcion}} </p>
+                  <a [href]="comercio.url"class="btn-link" target="_blank">More Info <i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
             </div>
@@ -68,7 +68,7 @@
       </div>
     </div>
   </div>
-  <!--Section 2 end-->
+  <!--Section Comercios end-->
 
   <!--Section 3 start-->
   <div class="align-items-center justify-content-center margenGlobal">
@@ -121,10 +121,11 @@
       </div>
     </div>
   </div>
+  <!--Section 3 end-->
 </div>
-<!--Section 3 end-->
 
-<div class="container-scroll-infinite-home" >
+<!--Section Logo end-->
+<div class="container-scroll-infinite-home">
   <ngx-slick-carousel class="scroller-home" #slickModal="slick-carousel" [config]="slideConfig2">
     <br>
     <div ngxSlickItem *ngFor="let logo of logos" class="scroller-home__inner logocarruel">
@@ -132,51 +133,54 @@
     </div>
   </ngx-slick-carousel>
 </div>
+<!--Section Logo end-->
 
+<!--Section Contacto end-->
 <div class="container-fluid mt-5">
-    <!--Section 4 start-->
-    <div class="align-items-center justify-content-center margenGlobal">
-      <div class="my-5 margenGlobal" id="Ubicacion">
-        <div class="row">
-          <div class="col-sm-6 d-flex justify-content-center align-items-center order-1">
-            <div class="card-body text-start">
-              <h2 class="textsecion4">Ubicación</h2>
-              <p>
-                The Point está convenientemente ubicado en dirección a San Blas, entre la gasolinera Puma y la
-                gasolinera
-                Texaco. Nuestra ubicación estratégica te permite acceder fácilmente.
-              </p>
-            </div>
+  <!--Section 4 start-->
+  <div class="align-items-center justify-content-center margenGlobal">
+    <div class="my-5 margenGlobal" id="Ubicacion">
+      <div class="row">
+        <div class="col-sm-6 d-flex justify-content-center align-items-center order-1">
+          <div class="card-body text-start">
+            <h2 class="textsecion4">Ubicación</h2>
+            <p>
+              The Point está convenientemente ubicado en dirección a San Blas, entre la gasolinera Puma y la
+              gasolinera
+              Texaco. Nuestra ubicación estratégica te permite acceder fácilmente.
+            </p>
           </div>
-          <div class="col-sm-6 d-flex justify-content-end order-2">
-            <img src="./assets/img/content/the-point-vista-aerea.jpg" class="img-fluid rounded" alt="..." />
+        </div>
+        <div class="col-sm-6 d-flex justify-content-end order-2">
+          <img src="./assets/img/content/the-point-vista-aerea.jpg" class="img-fluid rounded" alt="..." />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Section 4 end-->
+  <!--Section 5 start-->
+  <div class="align-items-center justify-content-center margenGlobal seccion-5" id="Contacto">
+    <div class="my-5 margenGlobal">
+      <div class="row">
+        <!-- Columna para la imagen -->
+        <div class="col-sm-6 d-flex justify-content-start align-items-center order-2 order-sm-1">
+          <img src="./assets/img/content/the-point-vista-del-parqueo.jpg" class="img-fluid rounded" alt="..." />
+        </div>
+        <!-- Columna para el texto -->
+        <div class="col-sm-6 d-flex justify-content-center align-items-center order-1 order-sm-2">
+          <div class="card-body">
+            <h2 class="textsecion4">¿Buscas un local?</h2>
+            <p>
+              Si deseas conocer la disponibilidad de locales, puedes contactarnos al: 7854-8869.
+            </p>
           </div>
         </div>
       </div>
     </div>
-    <!--Section 4 end-->
-    <!--Section 5 start-->
-    <div class="align-items-center justify-content-center margenGlobal seccion-5" id="Contacto">
-      <div class="my-5 margenGlobal">
-        <div class="row">
-          <!-- Columna para la imagen -->
-          <div class="col-sm-6 d-flex justify-content-start align-items-center order-2 order-sm-1">
-            <img src="./assets/img/content/the-point-vista-del-parqueo.jpg" class="img-fluid rounded" alt="..." />
-          </div>
-          <!-- Columna para el texto -->
-          <div class="col-sm-6 d-flex justify-content-center align-items-center order-1 order-sm-2">
-            <div class="card-body">
-              <h2 class="textsecion4">¿Buscas un local?</h2>
-              <p>
-                Si deseas conocer la disponibilidad de locales, puedes contactarnos al: 7854-8869.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Section 5 end-->
+  </div>
+  <!--Section 5 end-->
 </div>
+<!--Section Contacto end-->
 
 <app-footer></app-footer>
-  <router-outlet />
+<router-outlet />

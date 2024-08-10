@@ -21,6 +21,7 @@ a {
 
 
 .pricipaltext {
+    color: #001D6C;
     margin-top: 95px;
     font-weight: 700;
 }
@@ -112,13 +113,34 @@ a {
     margin-bottom: 35px;
 }
 
+.slick-next {
+    right: 0 !important;
+}
+
+.slick-prev {
+    left: 0 !important;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: unset !important;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
 
 /*section 2*/
 
 .textsecicion2title {
+    color:#001D6C;
     font-weight: 700;
     font-size: 20px;
 }
+
+
 
 .textsecicion2subtile {
     margin-top: -15px;
@@ -295,7 +317,7 @@ a {
     }
 
     .btn-square-nav {
-        margin-left: 0px;
+        margin-left: 15px;
         margin-top: 15px;
     }
 
