@@ -15,31 +15,88 @@
               </p>
             </div>
             <div class="d-grid gap-2 d-md-flex d-flex justify-content-md-center seccion-1-button">
-
               <button type="button" class="btn btn-primary btn-square-nav"
                 onclick="window.open('https://www.waze.com/live-map/directions/sv/la-libertad/san-blas/the-point?navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location&to=place.ChIJhUqUHwDVfI8RMJn6Qz-MMvI', '_blank')">
                 Waze
               </button>
-
               <button type="button" class="btn btn-outline-secondary btn-square-nav"
                 onclick="window.open('https://www.google.com/maps/place/The+Point/@13.4879,-89.3474879,17z/data=!4m6!3m5!1s0x8f7cd5001f944a85:0xf2328c3f43fa9930!8m2!3d13.4879!4d-89.3474879!16s%2Fg%2F11w3nbn40n?entry=ttu', '_blank')">
                 Google Maps
               </button>
-
             </div>
-            <div class="card-img ">
+            <div class="card-img">
               <img src="./assets/img/content/hero-section-the-point.jpg" class="img-fluid principalImage rounded"
                 alt="Placeholder image" />
               <div id="Comercios"></div>
+              
             </div>
-
           </div>
-
         </div>
-
       </div>
-
     </div>
+    
+   
+    
+    
+  <style>.circulo{
+    width: 100%;
+    height: 290px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 1px 2px 4px #aba5a5;
+    &-container{
+     width: 280px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 280px;
+      background-image: linear-gradient(#ff999980, #c558e830);
+       background: linear-gradient("#0098ff4f,#af00ff33");
+    }
+    &.fondo{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      background-image:radial-gradient(#f9f4f480, #c558e830);
+    }
+  }
+  .ondas{
+  
+    bottom:0px;
+    background-color: rgb(192, 214, 255);
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    border-radius:50%;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    
+    &.morada{
+  
+      animation-direction:alternate-reverse;
+      background-color: #00d5ff70;
+      border-radius: 22% 100% 30% 0px / 0% 88% 0px 0px;
+      
+    }
+     &.rosa{
+       
+      background-color: #343ed0c2;
+      border-radius: 100% 22% 0% 0px / 88% 0px 0px 0px;
+    }
+  }
+</style>
+    
+  </div>
+  <div class="circulo-container">
+    <div class="circulo">
+      <span class="ondas morada"></span>
+      <span class="ondas rosa"></span>
+      <span class=" circulo fondo"></span>
+    </div>  
   </div>
   <!--Section HOME end-->
 
