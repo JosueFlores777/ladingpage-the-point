@@ -15,15 +15,17 @@
               </p>
             </div>
             <div class="d-grid gap-2 d-md-flex d-flex justify-content-md-center seccion-1-button">
-              <button class="btn  btn-primary  me-md-2 btn-square"
-                onclick="window.open('https://www.google.com/maps/place/The+Point/@13.4879,-89.3474879,17z/data=!4m6!3m5!1s0x8f7cd5001f944a85:0xf2328c3f43fa9930!8m2!3d13.4879!4d-89.3474879!16s%2Fg%2F11w3nbn40n?entry=ttu', '_blank')">
 
+              <button type="button" class="btn btn-primary btn-square-nav"
+                onclick="window.open('https://www.waze.com/live-map/directions/sv/la-libertad/san-blas/the-point?navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location&to=place.ChIJhUqUHwDVfI8RMJn6Qz-MMvI', '_blank')">
                 Waze
               </button>
-              <button class="btn btn-outline-secondary btn-square" type="button"
-                onclick="window.open('https://www.waze.com/live-map/directions/sv/la-libertad/san-blas/the-point?navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location&to=place.ChIJhUqUHwDVfI8RMJn6Qz-MMvI', '_blank')">
-                Google maps
+
+              <button type="button" class="btn btn-outline-secondary btn-square-nav"
+                onclick="window.open('https://www.google.com/maps/place/The+Point/@13.4879,-89.3474879,17z/data=!4m6!3m5!1s0x8f7cd5001f944a85:0xf2328c3f43fa9930!8m2!3d13.4879!4d-89.3474879!16s%2Fg%2F11w3nbn40n?entry=ttu', '_blank')">
+                Google Maps
               </button>
+
             </div>
             <div class="card-img ">
               <img src="./assets/img/content/hero-section-the-point.jpg" class="img-fluid principalImage rounded"
@@ -59,7 +61,8 @@
                 <div class="card-body">
                   <h5 class="card-title" style="height: 25px;">{{comercio.nombre}}</h5>
                   <p class=" text-start" style="height: 79px;">{{comercio.descripcion}} </p>
-                  <a [href]="comercio.url"class="btn-link" target="_blank">More Info <i class="bi bi-arrow-right"></i></a>
+                  <a [href]="comercio.url" class="btn-link" target="_blank">More Info <i
+                      class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
             </div>
@@ -126,7 +129,7 @@
 
 <!--Section Logo end-->
 <div class="container-scroll-infinite-home">
-  <ngx-slick-carousel class="scroller-home" #slickModal="slick-carousel" [config]="slideConfig2">   <br>
+  <ngx-slick-carousel class="scroller-home" #slickModal="slick-carousel" [config]="slideConfig2"> <br>
     <div ngxSlickItem *ngFor="let logo of logos" class="scroller-home__inner logocarruel">
       <img [src]="logo" alt="" />
     </div>
