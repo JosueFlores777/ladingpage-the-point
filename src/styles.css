@@ -2,6 +2,10 @@
     margin: 50px;
 }
 
+.margenHomeTop{
+    margin-top: 55px;
+}
+
 .navbar {
     padding: 16px 80px;
 }
@@ -26,7 +30,7 @@ a {
     font-weight: 700;
 }
 
-.textsecion4{
+.textsecion4 {
     font-size: 42px;
     font-weight: 700;
     margin-bottom: 15px;
@@ -37,7 +41,7 @@ a {
 }
 
 .container_pricnital {
-    width: 900px;
+    width: auto;
 }
 
 .btn-primary {
@@ -78,8 +82,9 @@ a {
 /*Imagen principal*/
 
 .principalImage {
+    object-fit: cover;
     width: 900px;
-    height: 600px;
+    height: 700px;
 }
 
 .pricipal {
@@ -135,7 +140,7 @@ a {
 /*section 2*/
 
 .textsecicion2title {
-    color:#001D6C;
+    color: #001D6C;
     font-weight: 700;
     font-size: 20px;
 }
@@ -269,7 +274,53 @@ a {
     height: 48px;
 }
 
+.btn-square-home {
+   
+    border-radius: 0 !important;
+    padding: 0 16px 0 16px;
+    /*width: 152px;*/
+    height: 48px;
+}
+
+.imageVectorContacto {
+    width: 100px;
+    margin-bottom: -20px;
+}
+
+.imageVectorubicacion {
+    width: 200px;
+    margin-top: -340px;
+    z-index: 20;
+}
+
+.imageVector2 {
+    width: 200px;
+    margin-top: -340px;
+    z-index: 20;
+}
+
+.imageVectorhome {
+    margin-top: -250px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    z-index: 2;
+}
+
+.imageVector3{
+    max-width: 100%;
+
+}
+
 @media (max-width: 1200px) {
+
+    .imageVectorhome {
+        margin-top: -190px;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        z-index: 2;
+    }
     .btn-square {
         width: auto;
     }
@@ -282,12 +333,12 @@ a {
         padding: 0 60px 0 0;
     }
 
-    .textsecion4{
+    .textsecion4 {
         font-size: 40px;
         font-weight: 700;
         margin-bottom: 15px;
     }
-    
+
 }
 
 @media (max-width: 767.98px) {
@@ -321,19 +372,75 @@ a {
         margin-top: 15px;
     }
 
+    .btn-square-home {
+        margin-left: 0;
+        margin-top: 15px;
+    }
     .textcontendorSeccion4 {
         padding: 0 30px 0 0;
     }
 
-    .textsecion4{
+    .textsecion4 {
         font-size: 37px;
         font-weight: 700;
         margin-bottom: 15px;
     }
-    
+
+    .imageVector2 {
+        width: 150px;
+        margin-top: -320px;
+
+    }
+
+    .imageVectorhome {
+        margin-top: -80px;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        z-index: 2;
+    }
+
 }
 
 @media (max-width: 500px) {
+
+    .imageVector3 {
+        object-fit: cover;
+        height: 315px;
+        max-width: 100%;
+    }
+
+    .imageVectorhome {
+        margin-top: -30px;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        z-index: 2;
+    }
+
+
+    .margenHomeTop{
+        margin-top: 100px;
+    }
+
+    .container-scroll-infinite-home {
+        margin-top: 20px;
+
+    }
+
+    .imageVectorubicacion {
+        width: 150px;
+        margin-top: -240px;
+
+    }
+
+    .imageVector2 {
+        max-height: 214px;
+        height: 100%;
+        width: 150px;
+        margin-top: -260px;
+        z-index: 20;
+    }
 
     .textcontendorSeccion4 {
         padding: 0 0 0 0;
@@ -391,12 +498,13 @@ a {
     .acciontitle {
         font-size: 35px;
     }
-    .textsecion4{
-        font-size: 35   px;
+
+    .textsecion4 {
+        font-size: 35 px;
         font-weight: 700;
         margin-bottom: 15px;
     }
-    
+
     /*seciotn 2 */
 
 
@@ -422,18 +530,17 @@ a {
 
 
 .container-scroll-infinite-home {
-    height: 160px; 
-    width: 100%; 
-    background: #273B80 !important; 
-    align-items: center; 
+    margin-top: 50px;
+    height: 160px;
+    width: 100%;
+    background: #273B80 !important;
+    align-items: center;
     justify-content: center;
 }
-  
 
-  .scroller-home {
+
+.scroller-home {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  
+}

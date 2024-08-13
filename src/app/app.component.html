@@ -1,102 +1,58 @@
 <app-header></app-header>
-<div class="container-fluid mt-5">
-  <!--Section HOME start-->
-  <div class="d-flex align-items-center justify-content-center">
-    <div class="container">
-      <div class="row g-0">
-        <div class="card-text p-4">
-          <div>
-            <h5 class="card-title pricipaltext text-uppercase">The Point</h5>
-            <h2 class="segundaritext">The Right Place to Be</h2>
-            <div class="container_pricnital">
-              <p>
-                Bienvenido a The Point, el centro comercial donde encontrarás todo lo que necesitas en un solo lugar.
-                Desde deliciosa comida hasta los mejores productos para tu hogar, todo está aquí, esperándote.
-              </p>
-            </div>
-            <div class="d-grid gap-2 d-md-flex d-flex justify-content-md-center seccion-1-button">
-              <button type="button" class="btn btn-primary btn-square-nav"
-                onclick="window.open('https://www.waze.com/live-map/directions/sv/la-libertad/san-blas/the-point?navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location&to=place.ChIJhUqUHwDVfI8RMJn6Qz-MMvI', '_blank')">
-                Waze
-              </button>
-              <button type="button" class="btn btn-outline-secondary btn-square-nav"
-                onclick="window.open('https://www.google.com/maps/place/The+Point/@13.4879,-89.3474879,17z/data=!4m6!3m5!1s0x8f7cd5001f944a85:0xf2328c3f43fa9930!8m2!3d13.4879!4d-89.3474879!16s%2Fg%2F11w3nbn40n?entry=ttu', '_blank')">
-                Google Maps
-              </button>
-            </div>
-            <div class="card-img">
-              <img src="./assets/img/content/hero-section-the-point.jpg" class="img-fluid principalImage rounded"
-                alt="Placeholder image" />
-              <div id="Comercios"></div>
-              
-            </div>
+
+
+<div class="d-flex align-items-center justify-content-center mt-5">
+  <div class="row g-0 w-100 margenHomeTop">
+    <!-- Columna para la imagen -->
+    <div class="col-md-4">
+      <img src="./assets/img/content/the-point-vista-cenital.jpg" class="img-fluid principalImage rounded w-100"
+        alt="Placeholder image" />
+    </div>
+    <!-- Columna para el texto -->
+    <div class="col-md-8 d-flex align-items-center justify-content-center">
+      <div class="col-md-8 d-flex align-items-center justify-content-center mx-md-5 mx-3">
+        <div class="card-body">
+          <h5 class="card-title pricipaltext text-uppercase">The Point</h5>
+          <h2 class="segundaritext">The Right Place to Be</h2>
+          <div class="container_pricnital">
+            <p>
+              Bienvenido a The Point, el centro comercial donde encontrarás todo lo que necesitas en un solo lugar.
+              Desde deliciosa comida hasta los mejores productos para tu hogar, todo está aquí, esperándote.
+            </p>
+          </div>
+          <div class=" d-md-flex justify-content-start seccion-1-button">
+            <button type="button" class="btn btn-primary btn-square-home"
+              onclick="window.open('https://www.waze.com/live-map/directions/sv/la-libertad/san-blas/the-point?navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location&to=place.ChIJhUqUHwDVfI8RMJn6Qz-MMvI', '_blank')">
+              Waze
+            </button>
+            <button type="button" class="btn btn-outline-secondary btn-square-home ms-3"
+              onclick="window.open('https://www.google.com/maps/place/The+Point/@13.4879,-89.3474879,17z/data=!4m6!3m5!1s0x8f7cd5001f944a85:0xf2328c3f43fa9930!8m2!3d13.4879!4d-89.3474879!16s%2Fg%2F11w3nbn40n?entry=ttu', '_blank')">
+              Google Maps
+            </button>
           </div>
         </div>
       </div>
     </div>
-    
-   
-    
-    
-  <style>.circulo{
-    width: 100%;
-    height: 290px;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 1px 2px 4px #aba5a5;
-    &-container{
-     width: 280px;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 280px;
-      background-image: linear-gradient(#ff999980, #c558e830);
-       background: linear-gradient("#0098ff4f,#af00ff33");
-    }
-    &.fondo{
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-color: transparent;
-      background-image:radial-gradient(#f9f4f480, #c558e830);
-    }
-  }
-  .ondas{
-  
-    bottom:0px;
-    background-color: rgb(192, 214, 255);
-    position: absolute;
-    width: 100%;
-    height: 70%;
-    border-radius:50%;
-    animation-name: move;
-    animation-duration: 2s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    
-    &.morada{
-  
-      animation-direction:alternate-reverse;
-      background-color: #00d5ff70;
-      border-radius: 22% 100% 30% 0px / 0% 88% 0px 0px;
-      
-    }
-     &.rosa{
-       
-      background-color: #343ed0c2;
-      border-radius: 100% 22% 0% 0px / 88% 0px 0px 0px;
-    }
-  }
-</style>
-    
   </div>
+</div>
+
+
+
+
+<div class="w-100 d-flex align-items-center justify-content-center">
+  <img src="./assets/img/vectores/vector-surfista.png" class="img-fluid imageVectorhome" alt="Surfista" />
+</div>
+
+
+
+
+<div class="container-fluid mt-5">
   <div class="circulo-container">
     <div class="circulo">
       <span class="ondas morada"></span>
       <span class="ondas rosa"></span>
       <span class=" circulo fondo"></span>
-    </div>  
+    </div>
   </div>
   <!--Section HOME end-->
 
@@ -129,7 +85,12 @@
     </div>
   </div>
   <!--Section Comercios end-->
+</div>
 
+<div class="w-100 d-flex align-items-center justify-content-center mt-5 mb-5">
+  <img src="./assets/img/vectores/picture.jpg" class=" imageVector3" alt="Surfista" />
+</div>
+<div class="container-fluid mt-5">
   <!--Section 3 start-->
   <div class="align-items-center justify-content-center margenGlobal">
     <div class="my-5 margenGlobal">
@@ -175,7 +136,7 @@
           </div>
         </div>
 
-        <div class="col-md-6 d-flex align-items-center justify-content-end">
+        <div class="col-md-6 mt-5 d-flex align-items-center justify-content-end">
           <img src="./assets/img/content/the-point-vista-cenital.jpg" class="rounded imgCard" alt="..." />
         </div>
       </div>
@@ -183,6 +144,11 @@
   </div>
   <!--Section 3 end-->
 </div>
+<div class="d-flex justify-content-end">
+  <img src="./assets/img/vectores/freepik--Character--inject-33.png" class="imageVector2" alt="Tree" />
+
+</div>
+
 
 <!--Section Logo end-->
 <div class="container-scroll-infinite-home">
@@ -216,27 +182,36 @@
       </div>
     </div>
   </div>
-  <!--Section 4 end-->
+</div>
+<div class="d-flex justify-content-end">
+  <img src="./assets/img/vectores/freepik--tree-2--inject-1.png" class="imageVectorubicacion" alt="Tree" />
+
+</div>
+<!--Section 4 end-->
+<div class="container-fluid mt-5">
   <!--Section 5 start-->
-  <div class="align-items-center justify-content-center margenGlobal seccion-5" id="Contacto">
+  <div class="align-items-center justify-content-center margenGlobal " id="Contacto">
     <div class="my-5 margenGlobal">
+      <img src="./assets/img/vectores/freepik--tree-5--inject-1.png" class="imageVectorContacto" alt="Tree" />
+
       <div class="row">
-        <!-- Columna para la imagen -->
-        <div class="col-sm-6 d-flex justify-content-start align-items-center order-2 order-sm-1">
-          <img src="./assets/img/content/the-point-vista-del-parqueo.jpg" class="img-fluid rounded" alt="..." />
+
+        <div class="col-sm-6 d-flex justify-content-start align-items-center order-2 order-sm-1 position-relative">
+          <img src="./assets/img/content/the-point-vista-del-parqueo.jpg" class="img-fluid rounded w-100"
+            alt="The Point" />
+
         </div>
         <!-- Columna para el texto -->
         <div class="col-sm-6 d-flex justify-content-center align-items-center order-1 order-sm-2">
           <div class="card-body">
             <h2 class="textsecion4">¿Buscas un local?</h2>
-            <p>
-              Si deseas conocer la disponibilidad de locales, puedes contactarnos al: 7854-8869.
-            </p>
+            <p>Si deseas conocer la disponibilidad de locales, puedes contactarnos al: 7854-8869.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
+
   <!--Section 5 end-->
 </div>
 <!--Section Contacto end-->
