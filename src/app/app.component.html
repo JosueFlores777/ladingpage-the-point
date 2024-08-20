@@ -46,25 +46,25 @@
 
 
 
-<div class="container-fluid mt-5">
+<div class="container-fluid mt-5" id="Comercios">
   <div class="circulo-container">
     <div class="circulo">
       <span class="ondas morada"></span>
       <span class="ondas rosa"></span>
-      <span class=" circulo fondo"></span>
+      <span class=" circulo fondo" ></span>
     </div>
   </div>
   <!--Section HOME end-->
 
   <!--Section Comercios start-->
-  <div class="align-items-center justify-content-center margenGlobal">
+  <div class="align-items-center justify-content-center margenGlobal" >
     <div class="my-5 margenGlobal">
       <p class="text-center textsecicion2title text-uppercase">¡Visítanos HOY!</p>
       <h2 class="text-center textsecicion2subtile">
         Descubre nuestros comercios:
       </h2>
       <div class="row mt-5">
-        <div class="col-12">
+        <div class="col-12" >
           <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
             (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
             (beforeChange)="beforeChange($event)">
@@ -152,12 +152,13 @@
 
 <!--Section Logo end-->
 <div class="container-scroll-infinite-home">
-  <ngx-slick-carousel class="scroller-home" #slickModal="slick-carousel" [config]="slideConfig2"> <br>
+  <ngx-slick-carousel class="scroller-home" #slickModal="slick-carousel" [config]="slideConfig2">
     <div ngxSlickItem *ngFor="let logo of logos" class="scroller-home__inner logocarruel">
-      <img [src]="logo" alt="" />
+      <img [src]="logo" alt="Logo" />
     </div>
   </ngx-slick-carousel>
 </div>
+
 <!--Section Logo end-->
 
 <!--Section Contacto end-->

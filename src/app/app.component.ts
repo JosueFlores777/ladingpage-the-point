@@ -129,34 +129,15 @@ export class AppComponent {
   };
 
   logos = [
-    './assets/img/logo/300-logo.png',
-    './assets/img/logo/Hawaiice_Logo.png',
-    './assets/img/logo/KrazyPapas_Logo.png',
-    './assets/img/logo/LOGO SURF CITY AVANTE.png',
-    './assets/img/logo/logo-CASTELLA-SAGARRA.png',
-    './assets/img/logo/Logo-Romani_2024.png',
-    './assets/img/logo/LOGOS-SUIZA.png',
-    './assets/img/logo/Prado.png',
-    './assets/img/logo/logo.png',
-    './assets/img/logo/300-logo.png',
-    './assets/img/logo/Hawaiice_Logo.png',
-    './assets/img/logo/KrazyPapas_Logo.png',
-    './assets/img/logo/LOGO SURF CITY AVANTE.png',
-    './assets/img/logo/logo-CASTELLA-SAGARRA.png',
-    './assets/img/logo/Logo-Romani_2024.png',
-    './assets/img/logo/LOGOS-SUIZA.png',
-    './assets/img/logo/Prado.png',
-    './assets/img/logo/logo.png',
-    './assets/img/logo/300-logo.png',
-    './assets/img/logo/Hawaiice_Logo.png',
-    './assets/img/logo/KrazyPapas_Logo.png',
-    './assets/img/logo/LOGO SURF CITY AVANTE.png',
-    './assets/img/logo/logo-CASTELLA-SAGARRA.png',
-    './assets/img/logo/Logo-Romani_2024.png',
-    './assets/img/logo/LOGOS-SUIZA.png',
-    './assets/img/logo/Prado.png',
-    './assets/img/logo/logo.png',
-    
+    './assets/img/logo/asset 18.png',
+    './assets/img/logo/asset 19.png',
+    './assets/img/logo/asset 21.png',
+    './assets/img/logo/asset 22.png',
+    './assets/img/logo/asset 23.png',
+    './assets/img/logo/asset 24.png',
+    './assets/img/logo/asset 25.png',
+    './assets/img/logo/asset 26.png',
+ 
   ];
 
   slideConfig2 = {
@@ -165,10 +146,11 @@ export class AppComponent {
     autoplay: true,
     autoplaySpeed: 0,
     infinite: true,
-    speed: 5000,
+    speed: 5000, 
     cssEase: 'linear',
     arrows: false,
     dots: false,
+    pauseOnHover: false,
     responsive: [
       {
         breakpoint: 1024, 

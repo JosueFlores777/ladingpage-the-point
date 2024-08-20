@@ -2,6 +2,12 @@
     margin: 50px;
 }
 
+
+.titlenav{
+    color: #21272A;
+    font-weight: 500;
+}
+
 .margenHomeTop{
     margin-top: 55px;
 }
@@ -425,7 +431,6 @@ a {
 
     .container-scroll-infinite-home {
         margin-top: 20px;
-
     }
 
     .imageVectorubicacion {
@@ -524,7 +529,7 @@ a {
 .logocarruel img {
     width: 200px;
     height: 100px;
-    margin-right: 10px;
+    margin-right: 0;
     object-fit: contain;
 }
 
@@ -534,8 +539,10 @@ a {
     height: 160px;
     width: 100%;
     background: #273B80 !important;
+    display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden; /* Evita que el contenido sobresalga */
 }
 
 
@@ -543,4 +550,5 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
