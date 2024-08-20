@@ -51,35 +51,42 @@
     <div class="circulo">
       <span class="ondas morada"></span>
       <span class="ondas rosa"></span>
-      <span class=" circulo fondo" ></span>
+      <span class=" circulo fondo"></span>
     </div>
   </div>
   <!--Section HOME end-->
 
   <!--Section Comercios start-->
-  <div class="align-items-center justify-content-center margenGlobal" >
+  <div class="align-items-center justify-content-center margenGlobal">
     <div class="my-5 margenGlobal">
       <p class="text-center textsecicion2title text-uppercase">¡Visítanos HOY!</p>
       <h2 class="text-center textsecicion2subtile">
         Descubre nuestros comercios:
       </h2>
       <div class="row mt-5">
-        <div class="col-12" >
-          <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
-            (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
-            (beforeChange)="beforeChange($event)">
-            <div ngxSlickItem class="slide px-2" *ngFor="let comercio of comercios; trackBy: trackByFn">
-              <div class="card " style="width: auto; ">
-                <img [src]="comercio.img" class="card-img-top" alt="{{comercio.nombre}}">
-                <div class="card-body">
-                  <h5 class="card-title" style="height: 25px;">{{comercio.nombre}}</h5>
-                  <p class=" text-start" style="height: 79px;">{{comercio.descripcion}} </p>
-                  <a [href]="comercio.url" class="btn-link" target="_blank">More Info <i
-                      class="bi bi-arrow-right"></i></a>
+        <div class="col-12">
+          <div class="carousel-container" style="position: relative;">
+            <button class="custom-prev" (click)="slickModal.slickPrev()">prev</button>
+
+            <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
+              (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
+              (beforeChange)="beforeChange($event)">
+              <div ngxSlickItem class="slide px-2" *ngFor="let comercio of comercios; trackBy: trackByFn">
+                <div class="card" style="width: auto;">
+                  <img [src]="comercio.img" class="card-img-top" alt="{{comercio.nombre}}">
+                  <div class="card-body">
+                    <h5 class="card-title" style="height: 25px;">{{comercio.nombre}}</h5>
+                    <p class="text-start" style="height: 79px;">{{comercio.descripcion}}</p>
+                    <a [href]="comercio.url" class="btn-link" target="_blank">More Info <i
+                        class="bi bi-arrow-right"></i></a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </ngx-slick-carousel>
+            </ngx-slick-carousel>
+
+            <button class="custom-next" (click)="slickModal.slickNext()">next</button>
+          </div>
+
         </div>
       </div>
     </div>
