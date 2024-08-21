@@ -101,7 +101,7 @@ export class AppComponent {
     slidesToShow: 4,
     slidesToScroll: 1,
     dots: true,
-    arrows: true,
+    arrows: false,
     infinite: true,
     responsive: [
       {
@@ -176,9 +176,6 @@ export class AppComponent {
     ]
   };
   
-
-
-
   removeSlide() {
     if (this.comercios.length > 0) {
       this.comercios.pop();
@@ -186,19 +183,18 @@ export class AppComponent {
   }
 
   slickInit(e: any) {
-    console.log('slick initialized');
+   
   }
 
   breakpoint(e: any) {
-    console.log('breakpoint');
+   
   }
 
   afterChange(e: any) {
-    console.log('afterChange');
   }
 
   beforeChange(e: any) {
-    console.log('beforeChange');
+    
   }
 
   trackByFn(index: number, comercio: any) {

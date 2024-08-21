@@ -2,6 +2,9 @@
     margin: 50px;
 }
 
+nav {
+    border-bottom: 1px solid #273B80;
+}
 
 .titlenav {
     color: #21272A;
@@ -37,9 +40,14 @@ a {
 }
 
 .textsecion4 {
-    font-size: 42px;
+    font-size: 48px;
     font-weight: 700;
     margin-bottom: 15px;
+}
+
+.textcontesecion4 {
+    font-weight: 400;
+    font-size: 18px;
 }
 
 /*tiopo*/
@@ -65,23 +73,35 @@ a {
 
 .custom-prev,
 .custom-next {
-  z-index: 100; /* Aumenta el z-index para asegurarte de que se muestren por encima de otros elementos */
-  position: absolute !important;
-  top: 50%;
-  transform: translateY(-50%);
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 2rem; /* Ajusta el tamaño del ícono */
+    z-index: 100;
+    position: absolute !important;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
 }
 
 
 .custom-prev {
-  left: -40px; /* Ajusta la posición a la izquierda */
+    left: -30px;
 }
 
 .custom-next {
-  right: -40px; /* Ajusta la posición a la derecha */
+    right: -30px;
+}
+
+.custom-prev .carousel-control-prev-icon {
+    background-image: none;
+    border: 1px solid #273B80;
+    background-color: #273B80;
+}
+
+.custom-next .carousel-control-next-icon {
+    background-image: none;
+    border: 1px solid #273B80;
+    background-color: #273B80;
 }
 
 .segundaritext {
@@ -234,6 +254,46 @@ a {
     height: 400px !important;
 }
 
+.vector1 {
+    margin-top: -15px;
+}
+
+.vector-beach-waves {
+    width: 100%;
+}
+
+.cloud {
+    margin-top: -180px;
+}
+
+.cloud3 {
+    margin-top: -370px;
+}
+
+.vector-cloud-1 {
+    margin-left: 95px;
+    margin-top: -880px;
+}
+
+.vector-cloud-2 {
+    margin-right: 75px;
+    margin-top: -380px;
+}
+
+.contenidocontaco {
+    height: auto;
+    padding: 50px;
+    background: #D3F3FA;
+}
+
+.imgubicacio {
+    height: 500px;
+    width: 850px;
+}
+
+.margeUbica {
+    margin: 35px 0 35px 0;
+}
 
 
 .fondoTestimonio {
@@ -249,10 +309,68 @@ a {
     left: 39px;
 }
 
+.vector-cloud-6 {
+    margin-top: -400px;
+}
+
+.vector-cloud-7 {
+    margin-top: -340px;
+}
+
+
+.vector-cloud-4 {
+    width: 180px;
+    margin-left: 35px;
+    margin-top: -1200px;
+}
+
+.vector-cloud-5 {
+    width: 150px;
+    margin-right: 20px;
+    margin-top: -900px;
+}
+
+
+.vector-cloud-8 {
+    z-index: 5;
+    width: 100%;
+    margin-top: -185px;
+}
+
+.contactoSeccion {
+    z-index: 999;
+    margin-top: -90px;
+    padding: 50px;
+    background: #273B80;
+}
+
 /**/
 
 .containerScrollInfiteHome {
     background: #000000ab;
+}
+
+.texttilesecion5,
+.textsecion5 {
+    color: #fff;
+}
+
+.textsecion5 {
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+}
+
+
+.texttilesecion5 {
+    font-weight: 700;
+    font-size: 42px;
+    color: #fff;
+}
+
+
+.imageUbic {
+    width: 70%;
 }
 
 /**/
@@ -347,8 +465,17 @@ a {
     z-index: 20;
 }
 
+.card-seccion {
+    width: 60px;
+}
+
+.seccionconte {
+    height: 60vh;
+    background: #2A43A3;
+}
+
 .imageVectorhome {
-    margin-top: -250px;
+    margin-top: -350px;
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
@@ -363,7 +490,6 @@ a {
 @media (max-width: 1200px) {
 
     .imageVectorhome {
-        margin-top: -190px;
         max-width: 100%;
         max-height: 100%;
         object-fit: contain;
@@ -443,16 +569,91 @@ a {
     }
 
     .imageVectorhome {
-        margin-top: -80px;
+        margin-top: -180px;
         max-width: 100%;
         max-height: 100%;
         object-fit: contain;
         z-index: 2;
     }
 
+    .vector-cloud-7 {
+        width: 150px;
+        margin-top: -266px;
+    }
+
+    .contenidocontaco {
+        padding: 30px 0 30px 0;
+    }
+
+    .vector-cloud-6 {
+
+        display: none;
+    }
+
+    .imgubicacio {
+        width: auto;
+        height: auto;
+    }
+
+    .vector-cloud-5 {
+        display: none;
+    }
+
+    .vector-cloud-4 {
+        margin-top: -1225px
+    }
+
+    .vector-cloud-8 {
+        margin-top: -174px;
+    }
+    
+    .resposive{
+        display: none;
+    }
+
+    .imageUbic {
+        width: 90%;
+    }
 }
 
 @media (max-width: 500px) {
+
+    .vector-cloud-4 {
+        margin-left: -2px;
+        width: 124px;
+        z-index: 0;
+        margin-top: -700px;
+    }
+
+
+    .vector-cloud-8 {
+        margin-top: -169px;
+    }
+    
+    .texttilesecion5 {
+
+        font-size: 35px;
+    }
+
+    .textsecion5 {
+        font-size: 17px;
+
+    }
+
+
+    .contactoSeccion {
+        padding: 60px 0 60px 0;
+
+    }
+
+    .custom-prev {
+        left: -20px;
+    }
+
+    .custom-next {
+        right: -20px;
+    }
+
 
     .imageVector3 {
         object-fit: cover;
@@ -549,7 +750,8 @@ a {
     }
 
     .textsecion4 {
-        font-size: 35 px;
+        z-index: 50;
+        font-size: 35px;
         font-weight: 700;
         margin-bottom: 15px;
     }
@@ -579,10 +781,10 @@ a {
 
 
 .container-scroll-infinite-home {
-    margin-top: 50px;
+
     height: 160px;
     width: 100%;
-    background: #273B80 !important;
+    background: #2D51C8 !important;
     display: flex;
     align-items: center;
     justify-content: center;
