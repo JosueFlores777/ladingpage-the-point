@@ -37,12 +37,25 @@ a {
     color: #001D6C;
     margin-top: 95px;
     font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.segundaritext {
+    font-weight: 700;
+    font-size: 42px;
+    margin-bottom: 10px;
 }
 
 .textsecion4 {
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 15px;
+}
+
+.contentPrinc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height:25.2px;
 }
 
 .textcontesecion4 {
@@ -104,9 +117,7 @@ a {
     background-color: #273B80;
 }
 
-.segundaritext {
-    font-weight: 700;
-}
+
 
 .container_pricnital {
     width: auto;
@@ -606,8 +617,8 @@ a {
     .vector-cloud-8 {
         margin-top: -174px;
     }
-    
-    .resposive{
+
+    .resposive {
         display: none;
     }
 
@@ -617,6 +628,17 @@ a {
 }
 
 @media (max-width: 500px) {
+
+    .segundaritext {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    
+    .contentPrinc {
+        font-weight: 400;
+        font-size: 16px;
+        line-height:25.2px;
+    }
 
     .vector-cloud-4 {
         margin-left: -2px;
@@ -629,7 +651,7 @@ a {
     .vector-cloud-8 {
         margin-top: -169px;
     }
-    
+
     .texttilesecion5 {
 
         font-size: 35px;
