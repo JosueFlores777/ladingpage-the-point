@@ -124,18 +124,31 @@ a {
 }
 
 .btn-primary {
-    background: #273B80 !important;
+    font-weight: 500;
+    z-index: 999;
+    background: #2a43a3 !important;
     border-color: #273B80;
 }
 
+.btn-primary:hover {
+    z-index: 999;
+    background: #1c264f !important;
+    border-color: #273B80;
+}
+
+
 .btn-outline-secondary {
+    font-weight: 500;
+    z-index: 999;
     background-color: #DEE9FB;
     color: #273B80;
     border-color: #273B80;
+    border-width: 2px;
 }
 
 .btn-outline-secondary:hover {
-    background-color: #273B80;
+    
+    background-color: #4b81e6;
     color: #DEE9FB;
     border-color: #273B80;
 }
